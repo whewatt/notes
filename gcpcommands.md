@@ -8,10 +8,12 @@
 
 	gcloud config set project $PROJECT
 
-## Clone repo
+## Clone GCP Repo
 
 	gcloud source repos clone <repo> --project=<projectname>
-	
+	   or
+    git clone git clone https://source.developers.google.com/<project>/r/<repo>
+
 ## SSH to GCP
 
 	gcloud compute ssh --zone "us-east1-c" --ssh-flag="-N" --ssh-flag="-L" --ssh-flag="localhost:8081:localhost:8080" "<login>@datalabtutorial"
