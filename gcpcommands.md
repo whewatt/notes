@@ -12,7 +12,7 @@
 
 	gcloud source repos clone <repo> --project=<projectname>
 	   or
-    git clone git clone https://source.developers.google.com/<project>/r/<repo>
+    git clone https://source.developers.google.com/<project>/r/<repo>
 
 ## SSH to GCP
 
