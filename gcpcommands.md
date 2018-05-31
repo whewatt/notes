@@ -52,13 +52,6 @@ https://support.google.com/techstop/answer/2841128
 
 	gcloud auth print-access-token
   https://developers.google.com/identity/protocols/OAuth2
-
-## Default network settings
-
-	subnets - one per GCP region for each VPC network (currently 15)
-	firewall rules - allow icmp, tcp:3389 (for rdp) and tcp:22 (ssh) from 0.0.0.0/0
-	routes - one default route per region per network.  If there are 15 subnets on the VPC, there should be at least 15 routes
-
 ## Pub/Sub Topic publish & subscribe
 
 From nodejs-docs-samples/pubsub:
@@ -70,3 +63,15 @@ From nodejs-docs-samples/pubsub:
 You have to use Standard, not Legacy, SQL
 
 	DELETE from  dataset.table where columna is null
+
+## Default network settings
+
+	subnets - one per GCP region for each VPC network (currently 15)
+	!(./subnets.png)
+
+	firewall rules - allow icmp, tcp:3389 (for rdp) and tcp:22 (ssh) from 0.0.0.0/0
+	!(./firewalls.png)
+
+	routes - one default route per region per network.  If there are 15 subnets on the VPC, there should be at least 15 routes
+	!(./routes.png)
+
