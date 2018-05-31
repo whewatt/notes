@@ -67,7 +67,7 @@ You have to use Standard, not Legacy, SQL
 ## Default network settings
 
 	subnets - one per GCP region for each VPC network (currently 15)
-	!(./subnets.png)
+	<img src="./subnets.png"/>
 
 	firewall rules - allow icmp, tcp:3389 (for rdp) and tcp:22 (ssh) from 0.0.0.0/0
 	!(./firewalls.png)
