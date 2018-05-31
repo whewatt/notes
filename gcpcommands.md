@@ -71,8 +71,10 @@ You have to use Standard, not Legacy, SQL
 <img src="subnets.png"/>
 
 	firewall rules - allow icmp, tcp:3389 (for rdp) and tcp:22 (ssh) from 0.0.0.0/0
-	!(./firewalls.png)
+
+<img src="firewalls.png";/>
 
 	routes - one default route per region per network.  If there are 15 subnets on the VPC, there should be at least 15 routes
-	!(./routes.png)
+
+<img src="routes.png";/>
 
