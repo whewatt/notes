@@ -68,13 +68,13 @@ You have to use Standard, not Legacy, SQL
 
 	subnets - one per GCP region for each VPC network (currently 15)
 
-<img src="subnets.png"/>
+<img src="images/subnets.png"/>
 
 	firewall rules - allow icmp, tcp:3389 (for rdp) and tcp:22 (ssh) from 0.0.0.0/0
 
-<img src="firewalls.png"/>
+<img src="images/firewalls.png"/>
 
 	routes - one default route per region per network.  If there are 15 subnets on the VPC, there should be at least 15 routes
 
-<img src="routes.png"/>
+<img src="images/routes.png"/>
 
