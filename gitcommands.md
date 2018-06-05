@@ -1,10 +1,5 @@
 # Git Commands
 
-## Current Project
-
-	gcloud info
-
-
 ## Reference 
 
 https://docs.oracle.com/en/cloud/paas/developer-cloud/csdcs/using-git-command-line-interface.html#GUID-3F782579-50B6-4CCA-AD1C-D7E508D73974
@@ -47,4 +42,4 @@ git remote set-url origin git@github.com:username/repo.git
 ## Avoid need to put username/password when doing "git push"
 
     Edit ~/.netrc
-    Enter machine login password
+    Enter "machine <domain, e.g. github.com> login <user> password <pw>" 
