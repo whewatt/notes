@@ -42,16 +42,11 @@ Further instructions on SSH and remote desktop at:
 https://support.google.com/techstop/answer/2693936?hl=en&ref_topic=2739225
 https://support.google.com/techstop/answer/2841128
 
-
-## Linux
-
-	tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
-	grep -r "some text" .
-
 ## Get an OAuth Token (given a service account key file)
 
 	gcloud auth print-access-token
   https://developers.google.com/identity/protocols/OAuth2
+  
 ## Pub/Sub Topic publish & subscribe
 
 From nodejs-docs-samples/pubsub:
