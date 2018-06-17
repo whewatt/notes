@@ -27,3 +27,22 @@
             rm index.html
             sleep 3
         done
+
+## Stress CPU Load
+
+    sudo apt-get install stress
+    stress -cpu 2 -timeout 60
+
+## Linux Programs
+
+### Editor - Visual Studio
+
+    https://code.visualstudio.com/download
+
+### Screencast, Screenshot, Screen Recording - Kazam
+
+    sudo apt-get install kazam
+
+### Photo editing - Gimp
+
+###
