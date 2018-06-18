@@ -32,22 +32,15 @@ Truffle
 ## Deploy an app
 1.  Run "testrpc"
 2.  Save the mnemonic
+
     <img src ="images/testrpc.png">
 3.  In truffle.js, update "port" to the value on which testrpc is listening
 4.  Compile from the root of the project
 
         truffle compile
-
-
-        sudo apt-get install software-properties-common 
-        sudo add-apt-repository -y ppa:ethereum/ethereum 
-        sudo apt-get update 
-        sudo apt-get install ethereum -y
-
-
 5.  Deploy
 
-    truffle migrate
+        truffle migrate
 
 ## Debugging contracts
 
@@ -57,8 +50,11 @@ Truffle
 2.  Run tab
 
     a.  Select Environment
+
     b.  Select Account
+
     c.  Click Deploy
+
     <img src ="images/remix.png">
 
 radar lemon poet culture matter cycle aunt envelope review shrug shoulder cause
