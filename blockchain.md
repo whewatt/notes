@@ -26,7 +26,8 @@ Truffle
 2.  In the folder, run truffle
 
     truffle unbox webpack
-    <img src="images/truffle.png">
+
+<img src="images/truffle.png">
 
 ## Deploy an app
 1.  testrpc
@@ -34,8 +35,11 @@ Truffle
     <img src ="images/testrpc.png">
 3.  In truffle.js, match "port" to testrpc port
 4.  Compile from the root of the project
+
     truffle compile
+    
 5.  Deploy
+
     truffle migrate
 
 ## Debugging contracts
