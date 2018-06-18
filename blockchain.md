@@ -30,14 +30,16 @@ Truffle
 <img src="images/truffle.png">
 
 ## Deploy an app
-1.  testrpc
+1.  Run "testrpc"
 2.  Save the mnemonic
     <img src ="images/testrpc.png">
-3.  In truffle.js, match "port" to testrpc port
+3.  In truffle.js, update "port" to the value on which testrpc is listening
 4.  Compile from the root of the project
 
     truffle compile
-    
+
+    truffle compile
+
 5.  Deploy
 
     truffle migrate
@@ -48,6 +50,7 @@ Truffle
 
 1.  Compile tab
 2.  Run tab
+
     a.  Select Environment
     b.  Select Account
     c.  Click Deploy
