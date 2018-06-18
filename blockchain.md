@@ -13,8 +13,10 @@
 
 Chrome plugin Metamask
 Testrpc
+
     sudo npm install -g ethereumjs-testrpc
     testrpc
+
 Truffle
     sudo npm install -g truffle
     truffle
@@ -22,6 +24,7 @@ Truffle
 ## Starting a new project
 1.  Create a folder
 2.  In the folder, run truffle
+
     truffle unbox webpack
     <img src="images/truffle.png">
 
@@ -29,3 +32,21 @@ Truffle
 1.  testrpc
 2.  Save the mnemonic
     <img src ="images/testrpc.png">
+3.  In truffle.js, match "port" to testrpc port
+4.  Compile from the root of the project
+    truffle compile
+5.  Deploy
+    truffle migrate
+
+## Debugging contracts
+
+   https://remix.ethereum.org
+
+1.  Compile tab
+2.  Run tab
+    a.  Select Environment
+    b.  Select Account
+    c.  Click Deploy
+    <img src ="images/remix.png">
+
+radar lemon poet culture matter cycle aunt envelope review shrug shoulder cause
