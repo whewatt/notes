@@ -38,7 +38,12 @@ Truffle
 
     truffle compile
 
-    truffle compile
+
+    sudo apt-get install software-properties-common 
+    sudo add-apt-repository -y ppa:ethereum/ethereum 
+    sudo apt-get update 
+    sudo apt-get install ethereum -y
+
 
 5.  Deploy
 
