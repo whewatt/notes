@@ -36,13 +36,13 @@ Truffle
 3.  In truffle.js, update "port" to the value on which testrpc is listening
 4.  Compile from the root of the project
 
-    truffle compile
+        truffle compile
 
 
-    sudo apt-get install software-properties-common 
-    sudo add-apt-repository -y ppa:ethereum/ethereum 
-    sudo apt-get update 
-    sudo apt-get install ethereum -y
+        sudo apt-get install software-properties-common 
+        sudo add-apt-repository -y ppa:ethereum/ethereum 
+        sudo apt-get update 
+        sudo apt-get install ethereum -y
 
 
 5.  Deploy
