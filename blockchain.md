@@ -12,12 +12,14 @@
 ## Dev tools
 
 Chrome plugin Metamask
+
 Testrpc
 
     sudo npm install -g ethereumjs-testrpc
     testrpc
 
 Truffle
+
     sudo npm install -g truffle
     truffle
 
@@ -25,7 +27,7 @@ Truffle
 1.  Create a folder
 2.  In the folder, run truffle
 
-    truffle unbox webpack
+        truffle unbox webpack
 
 <img src="images/truffle.png">
 
