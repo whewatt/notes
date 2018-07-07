@@ -29,7 +29,7 @@ Truffle
 
         truffle unbox webpack
 
-<img src="images/truffle.png">
+<img src="images/truffle.png" align="center">
 
 ## Deploy an app
 1.  Run "testrpc"
