@@ -33,6 +33,18 @@
     sudo apt-get install stress
     stress -cpu 2 -timeout 60
 
+## Makefile syntax
+
+    PROJECT_ID=$(shell gcloud config list project --format=flattened | awk 'FNR == 1 {print $$2}')
+    GCLOUD_USER=$(shell gcloud config get-value core/account)
+
+    create-cluster:
+        gcloud container --project "$(PROJECT_ID)" clusters create "$(CLUSTER_NAME)" --zone "$(ZONE)" 
+        kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=$(GCLOUD_USER)
+    push:
+        gcloud auth configure-docker
+        docker push gcr.io/$(PROJECT_ID)/istiotest:1.0
+
 ## Linux Programs
 
 ### Editor - Visual Studio

@@ -59,4 +59,9 @@ Truffle
 
     <img src ="images/remix.png">
 
-radar lemon poet culture matter cycle aunt envelope review shrug shoulder cause
+## Solidity
+
+    sudo apt-get install solc
+    solc --version
+
+    
