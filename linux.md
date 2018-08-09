@@ -33,6 +33,8 @@
     sudo apt-get install stress
     stress -cpu 2 -timeout 60
 
+## Dockerfile syntax
+  
 ## Makefile syntax
 
     PROJECT_ID=$(shell gcloud config list project --format=flattened | awk 'FNR == 1 {print $$2}')
