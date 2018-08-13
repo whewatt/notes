@@ -33,12 +33,18 @@
     sudo apt-get install stress
     stress -cpu 2 -timeout 60
 
-## Dockerfile syntax
+## Docker
+
+### Dockerfile for java app
 
     FROM openjdk:8-jdk-alpine
     VOLUME /tmp
     COPY ${LOCAL_JAR_FILE} app.jar
     ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
+### Build and run
+    docker build -t {tag} .
+    docker run -p {host port}:{container port} {tag}
   
 ## Makefile syntax
 
