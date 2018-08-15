@@ -59,6 +59,28 @@ You have to use Standard, not Legacy, SQL
 
 	DELETE from  dataset.table where columna is null
 
+## AppEngine Flex
+### Build Java app
+
+    mvn package
+
+### Dockerfile for Java App (in app root)
+
+    FROM openjdk:8-jdk-alpine
+    VOLUME /tmp
+    COPY target/guestbook-0.0.1-SNAPSHOT.war app.jar
+    ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
+### app.yaml (in app root)
+
+    runtime: custom
+    env: flex
+    service: flexible-guest
+
+### Deploy
+
+    gcloud app deploy
+
 ## Default network settings
 
 	subnets - one per GCP region for each VPC network (currently 15)
