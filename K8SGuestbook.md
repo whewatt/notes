@@ -5,7 +5,7 @@
 
     mvn package
 
-## Put this Docker file in the guestbook service directory
+## Put this Dockerfile in the guestbook service directory
 
     FROM openjdk:8-jdk-alpine
     VOLUME /tmp
@@ -15,7 +15,13 @@
 ## Build a container
     docker build -t gcr.io/{your project}/guestbook:1.0 .
 
+## Run the container locally
+
+    docker run -it --rm -p 8080:8080 gcr.io/{your project}/guestbook:1.0
+    http://localhost:8080
+
 ## Push the container to a registry
+
     gcloud docker -- push gcr.io/{your project}/guestbook:1.0
 
 ## Set up authentication
